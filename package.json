@@ -4,7 +4,8 @@
   "description": "Create tunnel with your react application",
   "type": "module",
   "scripts": {
-    "build": "unbuild"
+    "build": "unbuild",
+    "lint": "pnpm biome check --write ./src"
   },
   "exports": {
     ".": {
@@ -29,6 +30,7 @@
   "author": "Ogabek Yuldoshev <https://github.com/OgabekYuldoshev>",
   "license": "ISC",
   "devDependencies": {
+    "@biomejs/biome": "1.9.4",
     "@types/react": "^19.0.7",
     "react": "^19.0.0",
     "typescript": "^5.7.3",
