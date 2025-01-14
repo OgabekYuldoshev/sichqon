@@ -4,8 +4,10 @@
   "description": "Create tunnel with your react application",
   "type": "module",
   "scripts": {
+    "preinstall": "npx only-allow pnpm",
     "build": "unbuild",
-    "lint": "pnpm biome check --write ./src"
+    "lint": "pnpm biome check --write ./src",
+    "test": "jest"
   },
   "exports": {
     ".": {
@@ -28,15 +30,33 @@
     "sichqon"
   ],
   "author": "Ogabek Yuldoshev <https://github.com/OgabekYuldoshev>",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/OgabekYuldoshev/sichqon.git"
+  },
+  "bugs": {
+    "url": "https://github.com/OgabekYuldoshev/sichqon/issues"
+  },
+  "homepage": "https://github.com/OgabekYuldoshev/sichqon#readme",
   "license": "ISC",
   "devDependencies": {
     "@biomejs/biome": "1.9.4",
+    "@testing-library/jest-dom": "^6.6.3",
+    "@testing-library/react": "^16.1.0",
+    "@types/jest": "^29.5.14",
     "@types/react": "^19.0.7",
+    "jest": "^29.7.0",
+    "jest-environment-jsdom": "^29.7.0",
     "react": "^19.0.0",
+    "simple-git-hooks": "^2.11.1",
+    "ts-jest": "^29.2.5",
     "typescript": "^5.7.3",
     "unbuild": "^3.3.1"
   },
   "peerDependencies": {
     "react": "^19.0.0"
+  },
+  "simple-git-hooks": {
+    "pre-commit": "pnpm lint"
   }
 }
