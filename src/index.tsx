@@ -10,7 +10,7 @@ const useIsomorphicLayoutEffect =
 	typeof window !== "undefined" ? useLayoutEffect : useEffect;
 
 type Listener = () => void;
-export function createTunnel() {
+function createTunnel() {
 	let localState: ReactNode[] = [];
 	let listeners: Listener[] = [];
 
@@ -46,3 +46,5 @@ export function createTunnel() {
 		},
 	};
 }
+
+export { createTunnel }
