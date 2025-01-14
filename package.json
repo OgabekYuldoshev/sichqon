@@ -1,6 +1,6 @@
 {
   "name": "sichqon",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Create tunnel with your react application",
   "type": "module",
   "scripts": {
