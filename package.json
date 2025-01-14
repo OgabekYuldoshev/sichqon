@@ -1,0 +1,40 @@
+{
+  "name": "sichqon",
+  "version": "0.0.1",
+  "description": "Create tunnel with your react application",
+  "type": "module",
+  "scripts": {
+    "build": "unbuild"
+  },
+  "exports": {
+    ".": {
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "main": "./dist/index.cjs",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist",
+    "package.json"
+  ],
+  "keywords": [
+    "react",
+    "tunnel",
+    "tunnel-rat",
+    "next",
+    "mice",
+    "sichqon"
+  ],
+  "author": "Ogabek Yuldoshev <https://github.com/OgabekYuldoshev>",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/react": "^19.0.7",
+    "react": "^19.0.0",
+    "typescript": "^5.7.3",
+    "unbuild": "^3.3.1"
+  },
+  "peerDependencies": {
+    "react": "^19.0.0"
+  }
+}
