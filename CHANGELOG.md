@@ -1,5 +1,11 @@
 # sichqon
 
+## 0.1.1
+
+### Patch Changes
+
+- fix import React error
+
 ## 0.1.0
 
 ### Minor Changes
